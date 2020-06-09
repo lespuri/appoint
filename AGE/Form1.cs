@@ -38,7 +38,7 @@ namespace AGE
             var ver = Assembly.GetExecutingAssembly().GetName().Version;
             lVersion = string.Format("AppointPlus: [Beta Version] ");
             //var bla = System.Deployment.Application.ApplicationDeployment.CurrentDeployment.CurrentVersion;
-            this.Text = lVersion;
+            //this.Text = lVersion;
             var skinManage = MaterialSkinManager.Instance;
             skinManage.AddFormToManage(this);
             skinManage.Theme = MaterialSkinManager.Themes.LIGHT;
@@ -217,6 +217,45 @@ namespace AGE
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void configuraçõesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Configuracao lConfiguracao = new Configuracao();
+            lConfiguracao.Show();
+        }
+
+        private void iniciarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RetiradaConteinerVazioRepositorio lRetiradaConteinerVazioRepositorio = new RetiradaConteinerVazioRepositorio();
+
+            var lConteinerVazioParaAgendar = lRetiradaConteinerVazioRepositorio.getConteinerVazioParaAgendar((RetiradaConteinerVazio.eStatus)comboBox1.SelectedValue);
+
+            foreach (var item in lConteinerVazioParaAgendar)
+            {
+                AgendarRetiradaConteinerVazio agendar = new AgendarRetiradaConteinerVazio(item);
+                agendar.agendar();
+            }
+
+            CarregarGrid();
+        }
+
+        private void materialLabel3_Click(object sender, EventArgs e)
+        {
+            Point screenPoint = materialLabel3.PointToScreen(new Point(materialLabel3.Left, materialLabel3.Bottom));
+            if (screenPoint.Y + contextMenuStrip1.Size.Height > Screen.PrimaryScreen.WorkingArea.Height)
+            {
+                contextMenuStrip1.Show(materialLabel3, new Point(0, -contextMenuStrip1.Size.Height));
+            }
+            else
+            {
+                contextMenuStrip1.Show(materialLabel3, new Point(0, materialLabel3.Height));
+            }
 
         }
     }

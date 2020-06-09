@@ -31,23 +31,23 @@
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
+            this.chkModoDebug = new System.Windows.Forms.CheckBox();
             this.txtEmailAdmin = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
             this.txtDpwEmail = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.lblDpwEmail = new MaterialSkin.Controls.MaterialLabel();
             this.txtDpwCPNJ = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.txtDpwURL = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
             this.txtDpwUsuario = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.txtDpwSenha = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
-            this.chkModoDebug = new System.Windows.Forms.CheckBox();
             this.materialTabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -95,34 +95,27 @@
             this.tabPage2.TabIndex = 0;
             this.tabPage2.Text = "Geral";
             // 
-            // materialRaisedButton1
+            // materialLabel6
             // 
-            this.materialRaisedButton1.Depth = 0;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(683, 4);
-            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton1.Name = "materialRaisedButton1";
-            this.materialRaisedButton1.Primary = true;
-            this.materialRaisedButton1.Size = new System.Drawing.Size(104, 35);
-            this.materialRaisedButton1.TabIndex = 14;
-            this.materialRaisedButton1.Text = "Salvar";
-            this.materialRaisedButton1.UseVisualStyleBackColor = true;
-            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click);
+            this.materialLabel6.AutoSize = true;
+            this.materialLabel6.Depth = 0;
+            this.materialLabel6.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel6.Location = new System.Drawing.Point(14, 163);
+            this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel6.Name = "materialLabel6";
+            this.materialLabel6.Size = new System.Drawing.Size(94, 19);
+            this.materialLabel6.TabIndex = 27;
+            this.materialLabel6.Text = "Modo Debug";
             // 
-            // tabPage1
+            // chkModoDebug
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.Snow;
-            this.tabPage1.Controls.Add(this.materialRaisedButton2);
-            this.tabPage1.Controls.Add(this.txtDpwURL);
-            this.tabPage1.Controls.Add(this.materialLabel5);
-            this.tabPage1.Controls.Add(this.txtDpwUsuario);
-            this.tabPage1.Controls.Add(this.txtDpwSenha);
-            this.tabPage1.Controls.Add(this.materialLabel2);
-            this.tabPage1.Controls.Add(this.materialLabel1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(789, 302);
-            this.tabPage1.TabIndex = 1;
-            this.tabPage1.Text = "DPWS";
+            this.chkModoDebug.AutoSize = true;
+            this.chkModoDebug.Location = new System.Drawing.Point(116, 168);
+            this.chkModoDebug.Name = "chkModoDebug";
+            this.chkModoDebug.Size = new System.Drawing.Size(15, 14);
+            this.chkModoDebug.TabIndex = 26;
+            this.chkModoDebug.UseVisualStyleBackColor = true;
             // 
             // txtEmailAdmin
             // 
@@ -208,6 +201,48 @@
             this.materialLabel3.TabIndex = 21;
             this.materialLabel3.Text = "CNPJ:";
             // 
+            // materialRaisedButton1
+            // 
+            this.materialRaisedButton1.Depth = 0;
+            this.materialRaisedButton1.Location = new System.Drawing.Point(683, 4);
+            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton1.Name = "materialRaisedButton1";
+            this.materialRaisedButton1.Primary = true;
+            this.materialRaisedButton1.Size = new System.Drawing.Size(104, 35);
+            this.materialRaisedButton1.TabIndex = 14;
+            this.materialRaisedButton1.Text = "Salvar";
+            this.materialRaisedButton1.UseVisualStyleBackColor = true;
+            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click);
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.BackColor = System.Drawing.Color.Snow;
+            this.tabPage1.Controls.Add(this.materialRaisedButton2);
+            this.tabPage1.Controls.Add(this.txtDpwURL);
+            this.tabPage1.Controls.Add(this.materialLabel5);
+            this.tabPage1.Controls.Add(this.txtDpwUsuario);
+            this.tabPage1.Controls.Add(this.txtDpwSenha);
+            this.tabPage1.Controls.Add(this.materialLabel2);
+            this.tabPage1.Controls.Add(this.materialLabel1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Size = new System.Drawing.Size(789, 302);
+            this.tabPage1.TabIndex = 1;
+            this.tabPage1.Text = "DPWS";
+            // 
+            // materialRaisedButton2
+            // 
+            this.materialRaisedButton2.Depth = 0;
+            this.materialRaisedButton2.Location = new System.Drawing.Point(679, 6);
+            this.materialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton2.Name = "materialRaisedButton2";
+            this.materialRaisedButton2.Primary = true;
+            this.materialRaisedButton2.Size = new System.Drawing.Size(104, 35);
+            this.materialRaisedButton2.TabIndex = 15;
+            this.materialRaisedButton2.Text = "Salvar";
+            this.materialRaisedButton2.UseVisualStyleBackColor = true;
+            this.materialRaisedButton2.Click += new System.EventHandler(this.materialRaisedButton2_Click);
+            // 
             // txtDpwURL
             // 
             this.txtDpwURL.Depth = 0;
@@ -292,41 +327,6 @@
             this.materialLabel1.TabIndex = 8;
             this.materialLabel1.Text = "Usuário:";
             // 
-            // materialRaisedButton2
-            // 
-            this.materialRaisedButton2.Depth = 0;
-            this.materialRaisedButton2.Location = new System.Drawing.Point(679, 6);
-            this.materialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton2.Name = "materialRaisedButton2";
-            this.materialRaisedButton2.Primary = true;
-            this.materialRaisedButton2.Size = new System.Drawing.Size(104, 35);
-            this.materialRaisedButton2.TabIndex = 15;
-            this.materialRaisedButton2.Text = "Salvar";
-            this.materialRaisedButton2.UseVisualStyleBackColor = true;
-            this.materialRaisedButton2.Click += new System.EventHandler(this.materialRaisedButton2_Click);
-            // 
-            // materialLabel6
-            // 
-            this.materialLabel6.AutoSize = true;
-            this.materialLabel6.Depth = 0;
-            this.materialLabel6.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel6.Location = new System.Drawing.Point(14, 163);
-            this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel6.Name = "materialLabel6";
-            this.materialLabel6.Size = new System.Drawing.Size(94, 19);
-            this.materialLabel6.TabIndex = 27;
-            this.materialLabel6.Text = "Modo Debug";
-            // 
-            // chkModoDebug
-            // 
-            this.chkModoDebug.AutoSize = true;
-            this.chkModoDebug.Location = new System.Drawing.Point(116, 168);
-            this.chkModoDebug.Name = "chkModoDebug";
-            this.chkModoDebug.Size = new System.Drawing.Size(15, 14);
-            this.chkModoDebug.TabIndex = 26;
-            this.chkModoDebug.UseVisualStyleBackColor = true;
-            // 
             // Configuracao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -335,6 +335,7 @@
             this.Controls.Add(this.materialTabControl1);
             this.Controls.Add(this.materialTabSelector1);
             this.Name = "Configuracao";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Configuracao";
             this.materialTabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);

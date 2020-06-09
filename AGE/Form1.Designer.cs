@@ -30,6 +30,7 @@ namespace AGE
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
@@ -37,8 +38,6 @@ namespace AGE
             this.materialFlatButton4 = new MaterialSkin.Controls.MaterialFlatButton();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.materialFlatButton3 = new MaterialSkin.Controls.MaterialFlatButton();
-            this.materialFlatButton2 = new MaterialSkin.Controls.MaterialFlatButton();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -47,9 +46,18 @@ namespace AGE
             this.materialFlatButton1 = new MaterialSkin.Controls.MaterialFlatButton();
             this.materialSingleLineTextField2 = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialSingleLineTextField1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.configuraçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.agendamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.iniciarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.relatóriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.programaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // materialRaisedButton1
@@ -94,8 +102,6 @@ namespace AGE
             this.tabPage1.Controls.Add(this.materialFlatButton4);
             this.tabPage1.Controls.Add(this.materialLabel1);
             this.tabPage1.Controls.Add(this.comboBox1);
-            this.tabPage1.Controls.Add(this.materialFlatButton3);
-            this.tabPage1.Controls.Add(this.materialFlatButton2);
             this.tabPage1.Controls.Add(this.materialLabel2);
             this.tabPage1.Controls.Add(this.comboBox2);
             this.tabPage1.Controls.Add(this.dataGridView1);
@@ -150,38 +156,6 @@ namespace AGE
             this.comboBox1.Size = new System.Drawing.Size(219, 26);
             this.comboBox1.TabIndex = 8;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // materialFlatButton3
-            // 
-            this.materialFlatButton3.AutoSize = true;
-            this.materialFlatButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialFlatButton3.Depth = 0;
-            this.materialFlatButton3.Location = new System.Drawing.Point(735, 17);
-            this.materialFlatButton3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialFlatButton3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFlatButton3.Name = "materialFlatButton3";
-            this.materialFlatButton3.Primary = false;
-            this.materialFlatButton3.Size = new System.Drawing.Size(122, 36);
-            this.materialFlatButton3.TabIndex = 7;
-            this.materialFlatButton3.Text = "Configurações";
-            this.materialFlatButton3.UseVisualStyleBackColor = true;
-            this.materialFlatButton3.Click += new System.EventHandler(this.materialFlatButton3_Click);
-            // 
-            // materialFlatButton2
-            // 
-            this.materialFlatButton2.AutoSize = true;
-            this.materialFlatButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialFlatButton2.Depth = 0;
-            this.materialFlatButton2.Location = new System.Drawing.Point(562, 17);
-            this.materialFlatButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialFlatButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFlatButton2.Name = "materialFlatButton2";
-            this.materialFlatButton2.Primary = false;
-            this.materialFlatButton2.Size = new System.Drawing.Size(165, 36);
-            this.materialFlatButton2.TabIndex = 3;
-            this.materialFlatButton2.Text = "iniciar agendamento";
-            this.materialFlatButton2.UseVisualStyleBackColor = true;
-            this.materialFlatButton2.Click += new System.EventHandler(this.materialFlatButton2_Click);
             // 
             // materialLabel2
             // 
@@ -290,11 +264,77 @@ namespace AGE
             this.materialSingleLineTextField1.TabIndex = 3;
             this.materialSingleLineTextField1.UseSystemPasswordChar = false;
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.configuraçõesToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.agendamentoToolStripMenuItem,
+            this.relatóriosToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(152, 76);
+            // 
+            // configuraçõesToolStripMenuItem
+            // 
+            this.configuraçõesToolStripMenuItem.Name = "configuraçõesToolStripMenuItem";
+            this.configuraçõesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.configuraçõesToolStripMenuItem.Text = "Configurações";
+            this.configuraçõesToolStripMenuItem.Click += new System.EventHandler(this.configuraçõesToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(148, 6);
+            // 
+            // agendamentoToolStripMenuItem
+            // 
+            this.agendamentoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.iniciarToolStripMenuItem});
+            this.agendamentoToolStripMenuItem.Name = "agendamentoToolStripMenuItem";
+            this.agendamentoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.agendamentoToolStripMenuItem.Text = "Agendamento";
+            // 
+            // iniciarToolStripMenuItem
+            // 
+            this.iniciarToolStripMenuItem.Name = "iniciarToolStripMenuItem";
+            this.iniciarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.iniciarToolStripMenuItem.Text = "Iniciar";
+            this.iniciarToolStripMenuItem.Click += new System.EventHandler(this.iniciarToolStripMenuItem_Click);
+            // 
+            // relatóriosToolStripMenuItem
+            // 
+            this.relatóriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.programaçãoToolStripMenuItem});
+            this.relatóriosToolStripMenuItem.Name = "relatóriosToolStripMenuItem";
+            this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.relatóriosToolStripMenuItem.Text = "Relatórios";
+            // 
+            // programaçãoToolStripMenuItem
+            // 
+            this.programaçãoToolStripMenuItem.Name = "programaçãoToolStripMenuItem";
+            this.programaçãoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.programaçãoToolStripMenuItem.Text = "Programação";
+            // 
+            // materialLabel3
+            // 
+            this.materialLabel3.AutoSize = true;
+            this.materialLabel3.Depth = 0;
+            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel3.Location = new System.Drawing.Point(17, 35);
+            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel3.Name = "materialLabel3";
+            this.materialLabel3.Size = new System.Drawing.Size(60, 19);
+            this.materialLabel3.TabIndex = 12;
+            this.materialLabel3.Text = "Opções";
+            this.materialLabel3.Click += new System.EventHandler(this.materialLabel3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1114, 597);
+            this.Controls.Add(this.materialLabel3);
             this.Controls.Add(this.materialTabControl1);
             this.Controls.Add(this.materialTabSelector1);
             this.Name = "Form1";
@@ -303,7 +343,9 @@ namespace AGE
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -321,11 +363,17 @@ namespace AGE
         private System.Windows.Forms.DataGridView dataGridView1;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private System.Windows.Forms.ComboBox comboBox2;
-        private MaterialSkin.Controls.MaterialFlatButton materialFlatButton2;
-        private MaterialSkin.Controls.MaterialFlatButton materialFlatButton3;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private System.Windows.Forms.ComboBox comboBox1;
         private MaterialSkin.Controls.MaterialFlatButton materialFlatButton4;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem configuraçõesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem agendamentoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem iniciarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem relatóriosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem programaçãoToolStripMenuItem;
+        private MaterialSkin.Controls.MaterialLabel materialLabel3;
     }
 }
 
