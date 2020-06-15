@@ -52,7 +52,6 @@ namespace AGE
             this.agendamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iniciarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatóriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.programaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -272,7 +271,7 @@ namespace AGE
             this.agendamentoToolStripMenuItem,
             this.relatóriosToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(152, 76);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 98);
             // 
             // configuraçõesToolStripMenuItem
             // 
@@ -284,7 +283,7 @@ namespace AGE
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(148, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // agendamentoToolStripMenuItem
             // 
@@ -297,23 +296,16 @@ namespace AGE
             // iniciarToolStripMenuItem
             // 
             this.iniciarToolStripMenuItem.Name = "iniciarToolStripMenuItem";
-            this.iniciarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.iniciarToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
             this.iniciarToolStripMenuItem.Text = "Iniciar";
             this.iniciarToolStripMenuItem.Click += new System.EventHandler(this.iniciarToolStripMenuItem_Click);
             // 
             // relatóriosToolStripMenuItem
             // 
-            this.relatóriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.programaçãoToolStripMenuItem});
             this.relatóriosToolStripMenuItem.Name = "relatóriosToolStripMenuItem";
-            this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.relatóriosToolStripMenuItem.Text = "Relatórios";
-            // 
-            // programaçãoToolStripMenuItem
-            // 
-            this.programaçãoToolStripMenuItem.Name = "programaçãoToolStripMenuItem";
-            this.programaçãoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.programaçãoToolStripMenuItem.Text = "Programação";
+            this.relatóriosToolStripMenuItem.Click += new System.EventHandler(this.relatóriosToolStripMenuItem_Click);
             // 
             // materialLabel3
             // 
@@ -372,7 +364,6 @@ namespace AGE
         private System.Windows.Forms.ToolStripMenuItem agendamentoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem iniciarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem relatóriosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem programaçãoToolStripMenuItem;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
     }
 }

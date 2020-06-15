@@ -149,11 +149,18 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="OperarSistemasDPW.cs" />
+    <Compile Include="Relatorio\ProgramacaoDiaria\Atividades\GerarRelatorioProgramacaoDiaria.cs" />
     <Compile Include="Views\Configuracao.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\Configuracao.Designer.cs">
       <DependentUpon>Configuracao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FiltroRelatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FiltroRelatorio.Designer.cs">
+      <DependentUpon>FiltroRelatorio.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\SplashScreen.cs">
       <SubType>Form</SubType>
@@ -180,6 +187,9 @@
     <EmbeddedResource Include="Views\Configuracao.resx">
       <DependentUpon>Configuracao.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\FiltroRelatorio.resx">
+      <DependentUpon>FiltroRelatorio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
@@ -205,7 +215,6 @@
     <Folder Include="Agendamento\ProcessoAgendamentoTerminal\BTP\" />
     <Folder Include="Agendamento\ProcessoAgendamentoTerminal\DPW\RetiradaConteinerVazio\Repositorios\" />
     <Folder Include="Agendamento\ProcessoAgendamentoTerminal\ECO\" />
-    <Folder Include="Relatorios\" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">

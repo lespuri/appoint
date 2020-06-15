@@ -54,6 +54,39 @@ namespace AGE.Agendamento.DPW.Entidades
             }
         }
 
+        public List<RetiradaConteinerVazio> getConteinerVazioAgendadoDoDia(DateTime prData)
+        {
+            try
+            {
+                var sql = string.Format("SELECT * FROM RetiradaConteinerVazio WHERE DataHora BETWEEN ('{0:yyyy-MM-dd} 00:00:00') and ('{0:yyyy-MM-dd} 23:00:00')  ", prData);
+
+                var llsConfiguracao = (from rw in execSql(sql).AsEnumerable()
+                                       select new RetiradaConteinerVazio()
+                                       {
+                                           Classificacao = rw["Classificacao"].ToString(),
+                                           CodigoControle = rw["CodigoControle"].ToString(),
+                                           DataHora = DateTime.Parse(rw["DataHora"].ToString().Trim()),
+                                           ExportadorCNPJ = rw["ExportadorCNPJ"].ToString(),
+                                           ExportadorNome = rw["ExportadorCNPJ"].ToString(),
+                                           Navio = rw["Navio"].ToString(),
+                                           RetiradaConteinerVazioId = int.Parse(rw["RetiradaConteinerVazioId"].ToString()),
+                                           QuantidadeConteiner = int.Parse(rw["QuantidadeConteiner"].ToString()),
+                                           Reserva = rw["Reserva"].ToString(),
+                                           Tipo = rw["Tipo"].ToString(),
+                                           PlacaVeiculo = rw["PlacaVeiculo"].ToString(),
+                                           CPFMotorista = rw["CPFMotorista"].ToString(),
+                                           Status = int.Parse(rw["Status"].ToString())
+                                       }).ToList();
+
+                return llsConfiguracao;
+            }
+            catch (Exception ex)
+            {
+                throw new CustomException(ex.Message, ex);
+            }
+        }
+
+
         public void Insert(DataTable prDataTable)
         {
             RetiradaConteinerVazio lRetiradaConteinerVazio = new RetiradaConteinerVazio();

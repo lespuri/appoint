@@ -137,7 +137,7 @@ namespace AGE
                             })
                             .OrderBy(item => item.value)
                             .ToList();
-                    comboBox1.DisplayMember = "Description";
+                    comboBox1.DisplayMember = "Description"; 
                     comboBox1.ValueMember = "value";
 
                     break;
@@ -257,6 +257,12 @@ namespace AGE
                 contextMenuStrip1.Show(materialLabel3, new Point(0, materialLabel3.Height));
             }
 
+        }
+
+        private void relatóriosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FiltroRelatorio lFiltroRelatorio = new FiltroRelatorio();
+            lFiltroRelatorio.Show();
         }
     }
 }
